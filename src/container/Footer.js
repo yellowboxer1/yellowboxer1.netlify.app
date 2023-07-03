@@ -14,7 +14,7 @@ const FooterContainer = styled.div`
 `;
 
 function Footer() {
-  return <FooterContainer>© 2021 Copyright gunwoongPark</FooterContainer>;
+  return <FooterContainer>© 2023 Copyright gunhoPark</FooterContainer>;
 }
 
 export default Footer;
