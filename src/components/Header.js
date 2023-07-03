@@ -24,7 +24,7 @@ function HeaderPresenter({
 
       <HeaderContainer pos={pos} mode={mode}>
         <Title mode={mode}>
-          jaewon<P>J</P>ung
+        gunhoPark
         </Title>
 
         <HamburgerBtn mode={mode} onClick={toggleHamburger}>
