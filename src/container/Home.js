@@ -68,7 +68,7 @@ function Home() {
                 </Quotes>
               ))}
           <Contents pos={"rightBot"} mode={mode}>
-            기획자입니다.
+            기획자 박건호입니다.
           </Contents>
         </Image>
       </JumbotronContainer>
