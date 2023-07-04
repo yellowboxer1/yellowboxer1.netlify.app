@@ -83,7 +83,7 @@ const JumbotronContainer = styled.div`
 
 const Image = styled.div`
   width: 100%;
-  height: 90vh;
+  height: 100vh;
 
   display: flex;
   justify-content: space-between;
@@ -96,20 +96,21 @@ const Image = styled.div`
 `;
 
 const Contents = styled.h1`
-  font-size: ${(props) => (props.mode === "isPc" ? "48px" : "42px")};
+  font-size: ${(props) => (props.mode === "isPc" ? "52px" : "42px")};
   color: white;
+  letter-spacing:0.05em;
   text-align: ${(props) => (props.pos === "rightBot" ? "right" : "")};
 
   ${(props) =>
     props.mode === "isPc" && props.pos === "leftTop"
       ? css`
-          margin: 205px 0 0 265px;
+          margin: 285px 0 0 265px;
         `
       : null};
   ${(props) =>
     props.mode === "isPc" && props.pos === "rightBot"
       ? css`
-          margin: 0 265px 150px 0;
+          margin: 0 265px 230px 0;
         `
       : null};
 
@@ -141,7 +142,8 @@ const Quotes = styled.h1`
   transform: translate(-50%, -50%);
   width: 100%;
   margin: 0;
-
+  letter-spacing:2px;
+  font-family: 'chosunNM';
   margin-top: 25px;
 
   transition: opacity 0.5s ease-out;
