@@ -12,10 +12,15 @@ import GS3 from "../assets/vueticky/GS3.png";
 
 import KHW1 from "../assets/youcandoeat/KHW1.PNG";
 import KHW2 from "../assets/youcandoeat/KHW2.PNG";
-import KHW3 from "../assets/youcandoeat/KHW3.PNG";
+import KHW3 from "../assets/youcandoeat/KHW3.jpg";
+import KHW4 from "../assets/youcandoeat/KHW4.JPG";
+import KHW5 from "../assets/youcandoeat/KHW5.JPG";
 
-import etc1 from "../assets/etcc/etc1.PNG";
-import etc2 from "../assets/etcc/etc2.PNG";
+
+import etc1 from "../assets/etcc/etc1.jpg";
+import etc2 from "../assets/etcc/etc2.png";
+import etc3 from "../assets/etcc/etc3.JPG";
+import etc4 from "../assets/etcc/etc4.JPG";
 
 function ProjectContainer() {
   const projects = [
@@ -62,24 +67,21 @@ function ProjectContainer() {
         "실증 운영",
         "특허 출원",
       ],
-      image: [KHW1, KHW2, KHW3],
-      url: "https://watsin-3b4e3.web.app/",
-      // git: "https://github.com/HwangYoonSeong/You_can_do_EAT",
+      image: [KHW2, KHW1, KHW3, KHW4, KHW5],
       mode: "app",
-      role: ["Embedded", "MySQLWorkbench", "React"],
+      role: ["Project manager", "Data analyst"],
     },
 
     {
       id: 4,
-      name: "[기타자료] 논문/특허등의 기타 자료모음",
-      info: `사업 진행중 진행한 것들의 성과물`,
-      tag: ["논문", "특허"],
-      image: [etc1, etc2],
+      name: "[과기부] 2023 스마트빌리지 1인가구 돌봄 사업",
+      info: `사업계획서 작성, 기획총괄, 사업 운영, PM, 일정 관리 등`,
+      tag: ["사업계획서 작성", "Project Managing", "대시보드 기획 및 개발", "앱 기획"],
+      image: [etc1, etc2, etc3, etc4],
       url: "",
-      // git: "",
       mode: "app",
       role: [
-        "수많은 연구와 여러 입증방법을 통하여 사실을 기반으로 작성한것이 등록되어있습니다.",
+        "Project manager", "Product manager",
       ],
     },
   ];

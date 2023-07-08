@@ -71,7 +71,7 @@ const Title = styled.h1`
 
 const SkillContainer = styled.div`
   width: 86px;
-  height: auto;
+  height: 180px;
 `;
 
 const S = styled.h1`
@@ -84,7 +84,7 @@ const S = styled.h1`
 `;
 
 const NameContainer = styled.div`
-  display: flex;
+  display: flex;s
   justify-content: center;
 `;
 
