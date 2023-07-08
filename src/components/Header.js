@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
 import TimelineContainer from "../container/TimelineContainer";
-
+import icons from "../assets/ico.png";
 import timelineIcon from "../assets/timeline-icon.png";
 
 function HeaderPresenter({
@@ -24,7 +24,8 @@ function HeaderPresenter({
 
       <HeaderContainer pos={pos} mode={mode}>
         <Title mode={mode}>
-          jaewon<P>J</P>ung
+        <img src={icons} alt="icon" style={{ width: "40px", marginRight: "10px" }} />
+        gunhoPark
         </Title>
 
         <HamburgerBtn mode={mode} onClick={toggleHamburger}>

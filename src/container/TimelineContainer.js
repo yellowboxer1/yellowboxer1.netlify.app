@@ -13,114 +13,92 @@ function TimelineContainer({ sidebar, setSidebar }) {
   const timeLine = [
     {
       id: 0,
-      date: "2020.02 - 2020.09",
-      title: "Intelligent Image Analysis Lab",
-      content: "지능형 영상분석 연구실 연구원 활동",
-      category: "lab",
-    },
-
-    {
-      id: 1,
-      date: "2020.03 - 2020.06",
-      title: "셈틀꾼 멘토(C++)",
-      content:
-        "컴퓨터공학과 학술동아리 '셈틀꾼'에서 20학년도 2학년 부원들을 대상으로 C++ 전공과목 멘토를 진행함.",
+      date: "2019.02",
+      title: "부산관광공사 한복체험관 명칭공모 대상",
+      content: "부산관광공사 주관 한복체험관 명칭 공모 1위로 수상",
       category: "mentor",
     },
 
     {
+      id: 1,
+      date: "2020.10 - 2022.01",
+      title: "라온코메스 입사",
+      content:
+        "농촌 계획 및 국책과제 운영 / 지역개발부 대리",
+      category: "company",
+    },
+
+    {
       id: 2,
-      date: "2020.07 - 2020.10",
-      title: "Semtle Project",
-      content: "셈틀꾼 공식 홈페이지 구현 프로젝트 진행",
+      date: "2020.10 - 2021.01",
+      title: "함양군 신활력플러스 기본계획",
+      content:
+        "기본계획 설계 (함양 항노화 엑스포와 연계한 기본계획 수립).",
       category: "project",
     },
 
     {
       id: 3,
-      date: "2020.09 - 2020.12",
-      title: "셈틀꾼 멘토(C)",
-      content:
-        "컴퓨터공학과 학술동아리 '셈틀꾼'에서 20학년도 신입생 부원들을 대상으로 C 전공과목 멘토를 진행함.",
-      category: "mentor",
+      date: "2020.12 - 2022.01",
+      title: "삼산면 기초생활거점 개발사업",
+      content: "기본 계획 총괄 및 설계, 사업 운영",
+      category: "project",
     },
 
     {
       id: 4,
-      date: "2020.09 - 2020.12",
-      title: "Vueticky Note Project",
+      date: "2020.12 - 2021.11",
+      title: "거제시 동부면 지역역량강화",
       content:
-        "오픈소스 Vue를 활용한 노트와 인공지능을 결합한 노트 웹앱을 구현 프로젝트 진행",
+        "주민교육 및 국책 사업 운영, 예산 관리 등 총괄 운영",
       category: "project",
     },
 
     {
       id: 5,
-      date: "2020.10 - 2020.12",
-      title: "전공특화 멘토(C)",
+      date: "2022.06 - 2021.10",
+      title: "사천시 어촌뉴딜 300 예비계획",
       content:
-        "전공특화 멘토링 C언어 멘토로 선정되어 신입생들을 대상으로 해당 분야의 이해를 돕기위한 멘토링을 진행함.",
-      category: "mentor",
-    },
-
-    {
-      id: 6,
-      date: "2020.10 - 2022.02",
-      title: "System Software Lab",
-      content: "시스템 소프트웨어 연구실 연구원 활동",
-      category: "lab",
-    },
-
-    {
-      id: 7,
-      date: "2020.12 - 2021.02",
-      title: "System Software Lab",
-      content:
-        "레지던트 프로그램 활동을 통하여 연구실 내 연구과제, 산학과제, 특수 장비 관리, 산업체 기술지도 등의 다양한 활동을 참여하여 전공분야 역량 강화.",
-      category: "lab",
-    },
-
-    {
-      id: 8,
-      date: "2021.02 - 2021.03",
-      title: "셈틀꾼 멘토(JavaScript)",
-      content:
-        "컴퓨터공학과 학술동아리 '셈틀꾼'에서 전 회원들을 대상으로 자바스크립트 멘토를 진행함.",
-      category: "mentor",
-    },
-
-    {
-      id: 9,
-      date: "2021.03 - 2021.06",
-      title: "셈틀꾼 멘토(HTML, CSS, JS)",
-      content:
-        "컴퓨터공학과 학술동아리 '셈틀꾼'에서 전 회원들을 대상으로 웹 프로그래밍 멘토를 진행함.",
-      category: "mentor",
-    },
-
-    {
-      id: 10,
-      date: "2021.03 - 2021.07",
-      title: "YouCanDoEat Project",
-      content: "외국인 대상 식자재 정보 제공 웹앱 구현 프로젝트 진행.",
+        "사천시 어촌뉴딜300 예비계획 수립 전체 총괄 및 설계 (갯섬항, 안도항, 상촌항 - 3개항 전체 예비계획 총괄 및 상촌항 예비계획서 작성)",
       category: "project",
     },
 
     {
-      id: 11,
-      date: "2021.07 - 2021.12",
-      title: "로지브라더스",
-      content: "로지브라더스 프론트 엔드 개발 업무",
+      id: 6,
+      date: "2022.03 - 재직중",
+      title: "제로웹 입사",
+      content:
+        "B2C, B2B 사업계획서 작성 및 프로젝트 매니징 / 사업전략부 선임",
       category: "company",
     },
 
     {
-      id: 12,
-      date: "2021.12 - present",
-      title: "PREF",
-      content: "PREF 프론트 엔드 개발 업무",
-      category: "company",
+      id: 7,
+      date: "2022.03 - 2023.06",
+      title: "2021 스마트시티챌린지사업",
+      content:
+        "부산 도시철도 내 실내 배리어프리 내비게이션 구축을 위한 실무 수행",
+      category: "project",
     },
+
+    {
+      id: 8,
+      date: "2022.04 - 2023.07",
+      title: "공공조달 연계 R&D 실증 사업화 지원 사업",
+      content:
+        "1인 가구 및 홀몸 노인 대상 라이프로그 추출을 위한 행동 분석 및 기획, 특허출원",
+      category: "project",
+    },
+
+    {
+      id: 9,
+      date: "2023.03 - 2023.07",
+      title: "2023 스마트빌리지 1인 가구 돌봄 사업",
+      content:
+        "빅데이터 기반 1인가구 돌봄 서비스를 위한 기획 총괄 및 사업 운영, 웹앱 구현 프로젝트 진행",
+      category: "mentor",
+    },
+
   ];
 
   const [mode, setMode] = useState("");

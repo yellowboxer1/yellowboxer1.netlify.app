@@ -2,92 +2,86 @@ import React, { useState, useEffect } from "react";
 import Project from "../components/Project";
 import { useMediaQuery } from "react-responsive";
 
-import IR1 from "../assets/semtle/HW1.PNG";
-import IR2 from "../assets/semtle/HW2.PNG";
-import IR3 from "../assets/semtle/HW3.PNG";
-import IR4 from "../assets/semtle/IRcase.PNG";
-import IR5 from "../assets/semtle/IR.PNG";
+import IR1 from "../assets/semtle/HW1.jpg";
+import IR2 from "../assets/semtle/HW2.jpg";
+import IR3 from "../assets/semtle/HW3.JPG";
 
-import GHW1 from "../assets/vueticky/GHW1.PNG";
-import GHW2 from "../assets/vueticky/GHW2.PNG";
-import GHW3 from "../assets/vueticky/GHW3.PNG";
-import GHW4 from "../assets/vueticky/GHW4.PNG";
+import GS1 from "../assets/vueticky/GS1.JPG";
+import GS2 from "../assets/vueticky/GS2.JPG";
+import GS3 from "../assets/vueticky/GS3.png";
 
 import KHW1 from "../assets/youcandoeat/KHW1.PNG";
 import KHW2 from "../assets/youcandoeat/KHW2.PNG";
-import KHW3 from "../assets/youcandoeat/KHW3.PNG";
+import KHW3 from "../assets/youcandoeat/KHW3.jpg";
+import KHW4 from "../assets/youcandoeat/KHW4.JPG";
+import KHW5 from "../assets/youcandoeat/KHW5.JPG";
 
-import etc1 from "../assets/etcc/etc1.PNG";
-import etc2 from "../assets/etcc/etc2.PNG";
+
+import etc1 from "../assets/etcc/etc1.jpg";
+import etc2 from "../assets/etcc/etc2.png";
+import etc3 from "../assets/etcc/etc3.JPG";
+import etc4 from "../assets/etcc/etc4.JPG";
 
 function ProjectContainer() {
   const projects = [
     {
       id: 1,
-      name: "[중기부] HW 개발 및 기능 구현 / 사업운영",
-      info: `중기부 프로젝트 진행 내용에 포함되는 센서 개발 및 기능 구현,
-      시험인증, 사업비 통계, 업체컨텍, 기타자료증빙 등의 업무 동시진행`,
-      tag: ["EasyEDA", "2D CAD", "C/C++", "Atemel", "Visual Studio Code"],
-      image: [IR1, IR2, IR3, IR4, IR5],
-      url: "https://mss.zeroweb.cloud/",
-      // git: "https://github.com/semtlekkun/semtleProject-front",
+      name: "[함양군] 신활력플러스 기본계획",
+      info: `함양 항노화 엑스포와 연계한 기본계획 수립, 
+시·군 단위 자금 계획 수립 및 사업 기획`,
+      tag: ["사업계획서 작성", "계획 수립", "과제 발굴", "일정 관리", "자금 편성", "기본 계획"],
+      image: [IR1, IR2, IR3],
       mode: "web",
-      role: ["Embedded"],
+      role: ["City Planner","Consultant"],
     },
 
     {
       id: 2,
-      name: "[국토부] HW 개발 및 기능구현 / SW 유지보수 및 기능추가",
-      info: `국토부 프로젝트 진행 내용에 포함되는 센서 개발 및 기능구현,
-      자사에서 보유중이던 유동인구 트래킹 센서 기능 추가(업그레이드) 및 개발된 센서와 데이터 융합`,
+      name: "[고성군] 삼산면 기초생활거점 개발사업",
+      info: `고성군 내 열악한 문화복지 여건 개선 및 거점 발전 계획 수립`,
       tag: [
-        "EasyEDA",
-        "Python",
-        "RaspberryPi4",
-        "MySQL",
-        "RestAPI",
-        "Visual Studio Code",
-        "Mac OS && Terminal",
+        "계획 수립",
+        "BC 분석",
+        "배치도 작성",
+        "거점 설계",
+        "법적 검토",
+        "토지 매입",
+        "사업 운영",
       ],
-      image: [GHW1, GHW2, GHW3, GHW4],
-      url: "https://master.dipgi7pfdfbsq.amplifyapp.com/gis",
-      // git: "https://github.com/gunwoongPark/Vueticky-Note",
+      image: [GS1, GS2, GS3],
       mode: "web",
-      role: ["Embedded", "MySQLWorkbench"],
+      role: ["City Planner", "Consultant"],
     },
 
     {
       id: 3,
-      name: "[과기부] 데이터 가공/융합 및 사업계획서 기획/작성 및 운영총괄",
-      info: `과기부 프로젝트 진행 내용에 포함되는 센서 데이터 가공 및 융합
-      시험인증, 사업비 통계, 실증, 기타자료증빙 등의 업무 동시진행`,
+      name: "[과기부] 공공조달 연계 R&D 실증 사업화 지원 사업",
+      info: `데이터 시각화, 사업계획서 기획/작성, 운영총괄, PM,
+시험인증, 사업비 관리, 실증, 특허 출원 등의 업무 동시진행`,
       tag: [
-        "React",
-        "Django",
-        "Python",
-        "MySQL",
-        "MQTT",
-        "Visual Studio Code",
-        "Mac OS && Terminal",
+        "데이터 시각화",
+        "사업계획서 작성",
+        "Project Managing",
+        "시험인증",
+        "사업비 관리",
+        "실증 운영",
+        "특허 출원",
       ],
-      image: [KHW1, KHW2, KHW3],
-      url: "https://watsin-3b4e3.web.app/",
-      // git: "https://github.com/HwangYoonSeong/You_can_do_EAT",
+      image: [KHW2, KHW1, KHW3, KHW4, KHW5],
       mode: "app",
-      role: ["Embedded", "MySQLWorkbench", "React"],
+      role: ["Project manager", "Data analyst"],
     },
 
     {
       id: 4,
-      name: "[기타자료] 논문/특허등의 기타 자료모음",
-      info: `사업 진행중 진행한 것들의 성과물`,
-      tag: ["논문", "특허"],
-      image: [etc1, etc2],
+      name: "[과기부] 2023 스마트빌리지 1인가구 돌봄 사업",
+      info: `사업계획서 작성, 기획총괄, 사업 운영, PM, 일정 관리 등`,
+      tag: ["사업계획서 작성", "Project Managing", "대시보드 기획 및 개발", "앱 기획"],
+      image: [etc1, etc2, etc3, etc4],
       url: "",
-      // git: "",
       mode: "app",
       role: [
-        "수많은 연구와 여러 입증방법을 통하여 사실을 기반으로 작성한것이 등록되어있습니다.",
+        "Project manager", "Product manager",
       ],
     },
   ];

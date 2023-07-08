@@ -1,27 +1,27 @@
 import React from "react";
 import Skills from "../components/Skills";
 
-import reactIcon from "../assets/skills/react.png";
-import htmlIcon from "../assets/skills/html.png";
-import cssIcon from "../assets/skills/css.png";
-import gitIcon from "../assets/skills/git.png";
+import hwpIcon from "../assets/skills/hwp.png";
+import pptIcon from "../assets/skills/ppt.png";
+import excelIcon from "../assets/skills/excel.png";
+import PhotoshopIcon from "../assets/skills/photoshop.png";
 import pyIcon from "../assets/skills/python.png";
-import bsIcon from "../assets/skills/bootstrap.png";
-import cIcon from "../assets/skills/c++.png";
-import djangoIcon from "../assets/skills/django.png";
-import c2Icon from "../assets/skills/c.png";
+import IllIcon from "../assets/skills/illust.png";
+import figIcon from "../assets/skills/figma.png";
+import RIcon from "../assets/skills/R.png";
+import swiftIcon from "../assets/skills/swift.png";
 
 function SkillsContainer() {
   const skills = [
-    { name: "HTML", icon: htmlIcon },
-    { name: "CSS", icon: cssIcon },
-    { name: "React", icon: reactIcon },
-    { name: "Bootstrap", icon: bsIcon },
-    { name: "Git", icon: gitIcon },
+    { name: "hwp", icon: hwpIcon },
+    { name: "ppt", icon: pptIcon },
+    { name: "excel", icon: excelIcon },
+    { name: "Photoshop", icon: PhotoshopIcon },
+    { name: "Illust", icon: IllIcon },
+    { name: "Figma", icon: figIcon },
     { name: "Python", icon: pyIcon },
-    { name: "C++", icon: cIcon },
-    { name: "Django", icon: djangoIcon },
-    { name: "C", icon: c2Icon },
+    { name: "R", icon: RIcon },
+    { name: "Swift", icon: swiftIcon },
   ];
   return <Skills skills={skills} />;
 }

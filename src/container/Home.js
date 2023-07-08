@@ -1,34 +1,26 @@
 import React, { useState, useEffect } from "react";
 import styled, { css } from "styled-components";
-import jumbImg from "../assets/jumbotron.jpeg";
+import jumbImg from "../assets/jumbotron.jpg";
 import { useMediaQuery } from "react-responsive";
 
 function Home() {
   let [mode, setMode] = useState("");
   let [quotesCnt, setQuotesCnt] = useState(0);
   const quotes = [
-    `사용자의 입장에서 
-    사용하기 편한 서비스를 제공하는`,
-    "클린하고 통일된 코드를 작성하는",
-    "항상 트렌디한 기술을 배우고, 공부하는",
-    "팀원들과의 의사소통을 즐기는",
-    `가까운 미래 유능한 시니어 개발자가 
-    되기 위해 항상 노력하는`,
+    '긍정적인 사고로 끊임없이 공부하는',
+    '사용자의 입장에서 생각하는',
+    '팀원들과의 의사소통을 즐기는',
+    '꿈꾸며 나아가는',
   ];
 
   const mobileQuotes = [
+    `긍정적인 사고로
+    끊임없이 공부하는`,
     `사용자의 입장에서
-    사용하기 편한 서비스를
-    제공하는`,
-    `클린하고 통일된
-    코드를 작성하는`,
-    `항상 트렌디한 기술을
-    배우고, 공부하는`,
+    생각하는`,
     `팀원들과의 
     의사소통을 즐기는`,
-    `가까운 미래 유능한 
-     시니어 개발자가
-    되기 위해 항상 노력하는`,
+    `꿈꾸며 나아가는`,
   ];
   const isPc = useMediaQuery({
     query: "(min-width:768px)",
@@ -76,7 +68,7 @@ function Home() {
                 </Quotes>
               ))}
           <Contents pos={"rightBot"} mode={mode}>
-            개발자입니다.
+            기획자 박건호입니다.
           </Contents>
         </Image>
       </JumbotronContainer>
@@ -104,20 +96,21 @@ const Image = styled.div`
 `;
 
 const Contents = styled.h1`
-  font-size: ${(props) => (props.mode === "isPc" ? "48px" : "36px")};
+  font-size: ${(props) => (props.mode === "isPc" ? "52px" : "42px")};
   color: white;
+  letter-spacing:0.05em;
   text-align: ${(props) => (props.pos === "rightBot" ? "right" : "")};
 
   ${(props) =>
     props.mode === "isPc" && props.pos === "leftTop"
       ? css`
-          margin: 205px 0 0 265px;
+          margin: 285px 0 0 265px;
         `
       : null};
   ${(props) =>
     props.mode === "isPc" && props.pos === "rightBot"
       ? css`
-          margin: 0 265px 150px 0;
+          margin: 0 265px 230px 0;
         `
       : null};
 
@@ -139,7 +132,7 @@ const Contents = styled.h1`
 `;
 
 const Quotes = styled.h1`
-  font-size: ${(props) => (props.mode === "isPc" ? "40px" : "28px")};
+  font-size: ${(props) => (props.mode === "isPc" ? "48px" : "42px")};
   white-space: pre-line;
   text-align: center;
   color: white;
@@ -149,7 +142,8 @@ const Quotes = styled.h1`
   transform: translate(-50%, -50%);
   width: 100%;
   margin: 0;
-
+  letter-spacing:2px;
+  font-family: 'chosunNM';
   margin-top: 25px;
 
   transition: opacity 0.5s ease-out;

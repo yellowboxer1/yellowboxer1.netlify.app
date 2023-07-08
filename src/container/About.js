@@ -6,7 +6,7 @@ import { FaBirthdayCake } from "react-icons/fa";
 import { SiGithub } from "react-icons/si";
 import { MdMail, MdCall } from "react-icons/md";
 import { FaUniversity } from "react-icons/fa";
-import image from "../assets/myphoto.jpeg";
+import image from "../assets/myphoto.jpg";
 import companyImg from "../assets/company.png";
 import blogImg from "../assets/blog.png";
 
@@ -43,8 +43,8 @@ function About() {
         </PhotoContainer>
 
         <Col>
-          <h2 style={{ fontWeight: "bold" }}>정재원</h2>
-          <h4>Embedded Developers and National Business PM</h4>
+          <h2 style={{ fontWeight: "bold" }}>박건호</h2>
+          <h4>Product Manager and Business PM</h4>
 
           <ContentContainer>
             <li className="Birth" style={{ display: "flex" }}>
@@ -53,7 +53,7 @@ function About() {
               </IconContainer>
               <div style={{ marginLeft: "24px" }}>
                 <h5 style={{ margin: "0" }}>Birthday :</h5>
-                <p style={{ margin: "0", fontSize: "17px" }}>1996.04.08</p>
+                <p style={{ margin: "0", fontSize: "17px" }}>1995.10.20</p>
               </div>
             </li>
           </ContentContainer>
@@ -66,7 +66,7 @@ function About() {
               <div style={{ marginLeft: "24px" }}>
                 <h5 style={{ margin: "0" }}>Phone :</h5>
                 <p style={{ margin: "0", fontSize: "17px" }}>
-                  +82 10-6770-3688
+                  +82 10-5475-6150
                 </p>
               </div>
             </li>
@@ -81,18 +81,16 @@ function About() {
                 <h5 style={{ margin: "0" }}>University / Department :</h5>
                 <Anchor
                   style={{ margin: "0", fontSize: "17px" }}
-                  href="https://www.silla.ac.kr/ko/"
                   target="__blank"
                 >
-                  신라대학교
+                  동의대학교
                 </Anchor>
                 <p style={{ display: "inline", fontSize: "17px" }}> / </p>
                 <Anchor
                   style={{ margin: "0", fontSize: "17px" }}
-                  href="https://electron.silla.ac.kr/electron/"
                   target="__blank"
                 >
-                  전자공학과
+                  사학과
                 </Anchor>
               </div>
             </li>
@@ -128,10 +126,10 @@ function About() {
               <div style={{ marginLeft: "24px" }}>
                 <h5 style={{ margin: "0" }}>EMail :</h5>
                 <Anchor
-                  href="mailto:wpavkzm97@naver.com"
+                  href="mailto:yellowboxer1@naver.com"
                   style={{ margin: "0", fontSize: "17px" }}
                 >
-                  wpavkzm97@naver.com
+                  yellowboxer1@naver.com
                 </Anchor>
               </div>
             </li>
@@ -146,10 +144,10 @@ function About() {
                 <h5 style={{ margin: "0" }}>GitHub :</h5>
                 <Anchor
                   style={{ margin: "0", fontSize: "17px" }}
-                  href="https://github.com/wpavkzm"
+                  href="https://github.com/yellowboxer1"
                   target="__blank"
                 >
-                  https://github.com/wpavkzm
+                  https://github.com/yellowboxer1
                 </Anchor>
               </div>
             </li>
@@ -161,7 +159,7 @@ function About() {
                 <img style={{ width: "30px" }} src={blogImg} alt="blog png" />
               </IconContainer>
               <div style={{ marginLeft: "24px" }}>
-                <h5 style={{ margin: "0" }}>velog :</h5>
+                <h5 style={{ margin: "0" }}> </h5>
                 <Anchor
                   style={{ margin: "0", fontSize: "17px" }}
                   href=""
@@ -177,16 +175,14 @@ function About() {
       <Row className="mt-5 mb-5">
         <Col style={{ textAlign: "center" }}>
           <h4 style={{ fontWeight: "bold", marginBottom: "1rem" }}>
-            꾸준히 성장하는 주니어 개발자 및 사업진행자 입니다.
+            꿈꾸며 나아가는 주니어 기획자입니다.
           </h4>
           <IntroduceText>
-            노력하여 만들어낸 성과가 눈앞에 보이는 것에 흥미를 느껴 유능한
-            임베드디 개발자가 되기 위해 쉬지 않고 배우고 있습니다.
+            새로운 경험을 통해 저만의 색을 찾아가고 있습니다.
             <br />
-            빠르게 변화하는 트렌드와 발전하는 기술에 적응하는 더 좋은 개발자가
-            되기 위해 항상 노력하고 있습니다.
+            더 넓은 바다로 나아가기 위해, 꿈꾸며 노력하는
             <br />
-            열정과 끈기가 있는 개발자입니다. 저에 대해 궁금하신 점이 있다면,
+            저에 대해 궁금하신 점이 있다면,
             위의 주소로 연락해주세요!
           </IntroduceText>
         </Col>
