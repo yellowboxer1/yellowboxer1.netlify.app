@@ -96,7 +96,7 @@ const Image = styled.div`
 `;
 
 const Contents = styled.h1`
-  font-size: ${(props) => (props.mode === "isPc" ? "52px" : "42px")};
+  font-size: ${(props) => (props.mode === "isPc" ? "52px" : "35px")};
   color: white;
   letter-spacing:0.05em;
   text-align: ${(props) => (props.pos === "rightBot" ? "right" : "")};
@@ -132,7 +132,7 @@ const Contents = styled.h1`
 `;
 
 const Quotes = styled.h1`
-  font-size: ${(props) => (props.mode === "isPc" ? "48px" : "42px")};
+  font-size: ${(props) => (props.mode === "isPc" ? "48px" : "36px")};
   white-space: pre-line;
   text-align: center;
   color: white;
