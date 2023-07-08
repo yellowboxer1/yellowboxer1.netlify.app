@@ -238,8 +238,17 @@ const PhotoContainer = styled.div`
 `;
 
 const IntroduceText = styled.p`
-  text-align: center;
-  font-size: 20px;
+font-size: 20px;
+line-height: 28px;
+letter-spacing: -0.01em;
+margin-bottom: 1.4rem;
+
+/* 모바일 화면에서 폰트 크기 조정 */
+@media (max-width: 767px) {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.05em;
+}
 `;
 
 const A = styled.h1`

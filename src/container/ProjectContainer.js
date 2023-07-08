@@ -68,7 +68,7 @@ function ProjectContainer() {
         "특허 출원",
       ],
       image: [KHW2, KHW1, KHW3, KHW4, KHW5],
-      mode: "app",
+      mode: "web",
       role: ["Project manager", "Data analyst"],
     },
 
@@ -79,7 +79,7 @@ function ProjectContainer() {
       tag: ["사업계획서 작성", "Project Managing", "대시보드 기획 및 개발", "앱 기획"],
       image: [etc1, etc2, etc3, etc4],
       url: "",
-      mode: "app",
+      mode: "web",
       role: [
         "Project manager", "Product manager",
       ],
