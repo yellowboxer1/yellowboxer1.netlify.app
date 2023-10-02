@@ -1,0 +1,5 @@
+@font-face {
+  font-family: "ChosunNM";
+  src: url('./fonts/ChosunNm.ttf');
+  src: url('./fonts/ChosunNm.woff') format('woff');
+}

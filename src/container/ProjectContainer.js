@@ -18,7 +18,7 @@ import KHW5 from "../assets/youcandoeat/KHW5.JPG";
 
 
 import etc1 from "../assets/etcc/etc1.jpg";
-import etc2 from "../assets/etcc/etc2.png";
+import etc2 from "../assets/etcc/etc2.PNG";
 import etc3 from "../assets/etcc/etc3.JPG";
 import etc4 from "../assets/etcc/etc4.JPG";
 

@@ -10,6 +10,7 @@ import IllIcon from "../assets/skills/illust.png";
 import figIcon from "../assets/skills/figma.png";
 import RIcon from "../assets/skills/R.png";
 import swiftIcon from "../assets/skills/swift.png";
+import reactIcon from "../assets/skills/react.png";
 
 function SkillsContainer() {
   const skills = [
@@ -22,6 +23,7 @@ function SkillsContainer() {
     { name: "Python", icon: pyIcon },
     { name: "R", icon: RIcon },
     { name: "Swift", icon: swiftIcon },
+    { name: "react", icon: reactIcon }    
   ];
   return <Skills skills={skills} />;
 }

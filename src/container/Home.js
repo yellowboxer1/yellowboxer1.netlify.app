@@ -3,6 +3,8 @@ import styled, { css } from "styled-components";
 import jumbImg from "../assets/jumbotron.jpg";
 import { useMediaQuery } from "react-responsive";
 
+import "./home.css";
+
 function Home() {
   let [mode, setMode] = useState("");
   let [quotesCnt, setQuotesCnt] = useState(0);
@@ -99,6 +101,7 @@ const Contents = styled.h1`
   font-size: ${(props) => (props.mode === "isPc" ? "52px" : "35px")};
   color: white;
   letter-spacing:0.05em;
+  font-family: 'ChosunNM';
   text-align: ${(props) => (props.pos === "rightBot" ? "right" : "")};
 
   ${(props) =>
@@ -143,7 +146,7 @@ const Quotes = styled.h1`
   width: 100%;
   margin: 0;
   letter-spacing:2px;
-  font-family: 'chosunNM';
+  font-family: 'ChosunNM';
   margin-top: 25px;
 
   transition: opacity 0.5s ease-out;
