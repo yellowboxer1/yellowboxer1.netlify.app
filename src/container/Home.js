@@ -50,7 +50,7 @@ function Home() {
       <JumbotronContainer id="Home">
         <Image>
           <Contents pos={"leftTop"} mode={mode}>
-            안녕하세요! 저는
+            안녕하세요!
           </Contents>
           {mode === "isPc"
             ? quotes.map((quote, index) => (
